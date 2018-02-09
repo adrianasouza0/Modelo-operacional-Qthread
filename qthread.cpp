@@ -63,7 +63,7 @@ void Qthread::start(Priority priority){
 void Qthread::setPriority(Priority priority){
 
 
-   // std::cout<<"Conectando metodo setPriority () !!"<<std::endl;
+   // std::cout<<"Connecting setPriority() method !!"<<std::endl;
           if (priority == IdlePriority){
 
               pthread_create(&_id, &_attr, Qthread::function, this);
@@ -106,7 +106,7 @@ void Qthread::setPriority(Priority priority){
 
 void Qthread::run(){
 
-              cout<<"Thread estartada! " << endl;
+              cout<<"Start Thread! " << endl;
               exec();
 
 
@@ -130,5 +130,5 @@ bool Qthread::wait()
     int *b;
 
     pthread_join(_id,(void**)&b);
-    cout << "Thread finalizada"<< b <<endl;
+    cout << "Finish Thread"<< b <<endl;
 };
