@@ -7,7 +7,7 @@ QEventLoop::~QEventLoop(){
 
 };
 int QEventLoop::exec(){
-          cout << "Thread finalizada"<<endl;
+          cout << "Finish Thread"<<endl;
 
 };
 
