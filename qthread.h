@@ -29,7 +29,7 @@ public:
         InheritPriority
     };
    void setPriority(Priority priority);
-    //setPriority --define a prioridade de uma thread em execução
+    //setPriority --sets the priority of a running thread
    Priority priority() const;
    void start(Priority = InheritPriority);
 //y
